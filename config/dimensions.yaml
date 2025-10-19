@@ -1,0 +1,33 @@
+# CR&A Framework Dimension Configuration
+# Version 0.9
+
+dimensions:
+  iai:
+    weight: 0.25
+    enabled: true
+    description: "Input Alignment Index - Measures prompt quality and clarity"
+
+  cai:
+    weight: 0.20
+    enabled: true
+    description: "Conceptual Anchoring Index - Measures cognitive handholds"
+
+  pas:
+    weight: 0.20
+    enabled: true
+    description: "Process Alignment Score - Measures interaction flow"
+
+  sas:
+    weight: 0.15
+    enabled: true
+    description: "Synchronization Alignment Score - Measures style matching"
+
+  cps:
+    weight: 0.10
+    enabled: true
+    description: "Cognitive Progression Scale - Measures collaboration depth"
+
+  css:
+    weight: 0.10
+    enabled: true
+    description: "Cognitive Safety Scale - Measures psychological safety"

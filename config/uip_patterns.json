@@ -1,0 +1,19 @@
+{
+  "uip_patterns": {
+    "precision_seeker": {
+      "keywords": ["exact", "define", "list", "specifically", "correct", "only", "step-by-step"],
+      "response_style_priority": ["structured", "concise", "bounded"],
+      "description": "User expects concise, definitive, bounded answers."
+    },
+    "strategic_explorer": {
+      "keywords": ["framework", "model", "system", "big picture", "how does this fit", "map", "concept"],
+      "response_style_priority": ["framework", "analogy", "structured"],
+      "description": "User seeks frameworks, models, and mental maps."
+    },
+    "co_creation_partner": {
+      "keywords": ["let's", "build", "together", "collaborate", "your input", "what do you think"],
+      "response_style_priority": ["interactive", "iterative", "suggestive"],
+      "description": "User wants to build iteratively with the AI."
+    }
+  }
+}
