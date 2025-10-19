@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Analyze Interaction - Assessor{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Analyze Human-AI Interaction</h2>
+
+    <form id="analysisForm" method="POST">
+        <div class="form-section">
+            <label for="userPrompt">User Prompt:</label>
+            <textarea id="userPrompt" name="userPrompt" rows="10" placeholder="Enter the user's prompt here..."></textarea>
+        </div>
+
+        <div class="form-section">
+            <label for="aiResponse">AI Response:</label>
+            <textarea id="aiResponse" name="aiResponse" rows="10" placeholder="Enter the AI's response here..."></textarea>
+        </div>
+
+        <div class="form-options">
+            <label>
+                <input type="checkbox" id="detailedAnalysis" name="detailedAnalysis" checked>
+                Include Detailed Analysis
+            </label>
+        </div>
+
+        <button type="submit" id="analyzeBtn">Analyze Interaction</button>
+    </form>
+
+    <div id="results" class="results-section" style="display: none;">
+        <h3>Analysis Results</h3>
+        <div id="resultsContent"></div>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">
+        <p>Analyzing interaction...</p>
+    </div>
+    <!-- Feedback & Save Section -->
+    <div class="save-section" style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; border: 2px solid #e9ecef;">
+    <h3>💾 Save & Submit This Analysis</h3>
+    <p><strong>Help improve AI interactions by contributing this analysis to our research!</strong></p>
+
+    <!-- SUBMISSION INSTRUCTIONS (Always visible) -->
+    <div style="background: #e8f5e8; padding: 1rem; border-radius: 5px; margin-bottom: 1rem; border-left: 4px solid #28a745;">
+        <h5>📋 How to Submit:</h5>
+        <ol>
+            <li><strong>Save your analysis</strong> using the button below</li>
+            <li><strong>Choose submission method:</strong>
+                <ul>
+                    <li>📧 Email to: <code>feedback@formianlabs.com</code></li>
+                    <li>🌐 Upload at: <a href="https://formianlabs.com/upload" target="_blank">formianlabs.com/upload</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="save-form">
+        <div class="form-group">
+            <label for="userRating">Rate this analysis:</label>
+            <select id="userRating" class="form-control">
+                <option value="">How accurate was it?</option>
+                <option value="great">🎯 Great - Very accurate</option>
+                <option value="good">👍 Good - Mostly accurate</option>
+                <option value="mediocre">😐 Mediocre - Somewhat accurate</option>
+                <option value="bad">👎 Bad - Not very accurate</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="userComments">Your comments (optional but helpful):</label>
+            <textarea id="userComments" class="form-control" rows="2"
+                     placeholder="What was helpful? What could be better?"></textarea>
+        </div>
+
+        <div class="save-buttons">
+            <button id="downloadFeedback" class="btn btn-success">
+                💾 Save Analysis File
+            </button>
+        </div>
+
+        <div id="downloadConfirmation" style="display: none; margin-top: 1rem; padding: 1rem; background: #d4edda; border-radius: 5px;">
+            <p>✅ <strong>Analysis saved!</strong> Check the instructions above to submit it.</p>
+        </div>
+
+        <div id="feedbackMessage" style="margin-top: 1rem;"></div>
+    </div>
+</div>
+
+
+</div>
+{% endblock %}
