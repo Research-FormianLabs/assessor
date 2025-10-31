@@ -3,7 +3,14 @@ A tool for analyzing the quality of human-AI interactions using the Cognitive Re
 
 ## **Quick Start**
 
-### **1. Install Python Dependencies**
+### **1. Installation**
+**Clone the repository:**
+  ``` bash
+   git clone https://github.com/Research-FormianLabs/assessor.git
+   cd assessor
+```
+
+### **2. Install Dependencies**
 
 First, install the required Python packages:
 
@@ -11,19 +18,19 @@ First, install the required Python packages:
 pip install -r requirements.txt
 ```
 
-### **2. Run the Application**
+### **3. Run the Application**
 
 Start the web server:
 
 ```bash
-python app.py
+python3 app.py
 ```
 
-### **3. Open Your Browser**
+### **4. Open Your Browser**
 
 Go to: `http://127.0.0.1:5000`
 
-### **4. Analyze an Interaction**
+### **5. Analyze an Interaction**
 
 1. Paste a **User Prompt** (what the human said to the AI)
 2. Paste the **AI Response** (what the AI replied)
