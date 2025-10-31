@@ -79,6 +79,18 @@ Each dimension analyzer is independent. To improve one:
 
 This tool implements the Cognitive Resonance & Alignment Framework, which provides scientific metrics for measuring the quality of human-AI collaboration beyond just factual accuracy.
 
+## Example Output
+
+Running the Assessor on a sample conversation yields a clear diagnostic report:
+
+Analysis Results Resonance Index: 0.406 Alignment Modulator: 0.800 | User Intent: co_creation_partner (0.333 confidence)
+
+Dimension Scores (0-1 scale): IAI (Input Alignment): 0.378 CAI (Conceptual Anchoring): 0.500 PAS (Process Alignment): 0.355 SAS (Synchronization): 0.680 CPS (Cognitive Progression): 0.800 CSS (Cognitive Safety): 0.600
+
+Detailed Analysis: IAI: Poor input alignment - vague or insufficient context CAI: Basic anchoring (2 anchors: {‘boundary’: 0, ‘analogy’: 2, ‘hypothesis’: 0}) PAS: Poor process alignment - disjointed or inefficient SAS: Good synchronization - AI understood your approach CPS: CPS: Advanced Collaborative development - building solutions together (Level 4: Co-Creation) CSS: CSS: Good Consequence-free scrutiny - comfortable exploration without fear (Level 3) AM: Significant misalignment - Poor co_creation_partner style matching.
+
+This example demonstrates how the Assessor provides actionable insights beyond just a score. It shows that while the AI response had good conceptual structure (CAI: 0.5) and high collaboration potential (CPS: 0.8), there were clear opportunities for improvement in process flow (PAS: 0.355) and style alignment (AM: 0.8).
+
 ## **Support**
 
 For questions or contributions, please open an issue or discussion in this repository.
