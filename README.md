@@ -2,7 +2,7 @@
 A tool for analyzing the quality of human-AI interactions using the Cognitive Resonance & Alignment (CR&A) Framework.
 
 ## Current status (2026)
-This project is in hibernation. The core CR&A and O‑CRA frameworks are now maintained at [github.com/formianlabs/ocra-framework](https://github.com/formianlabs/ocra-framework). Development of this Assessor tool will resume after the O‑CRA paper phase — likely Q3 2025. No contributions are being reviewed at this time.
+This project is in hibernation. Development of this Assessor tool will resume after the O‑CRA paper phase — likely Q3 2026. No contributions are being reviewed at this time.
 
 
 
